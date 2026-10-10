@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Workout Tracker</title>
+</head>
+<body>
+    <a href='/'>Home</a>
+    <a href='/exercises'>All Exercises</a>
+    <a href='/log'>Workout Entry</a>
+    {% for exerc in workouts %}
+        <h3>Name: {{exerc[2]}}</h3>
+        <p>Date: {{exerc[1]}}; Weight: {{exerc[5]}}; Reps: {{exerc[6]}}; Sets: {{exerc[7]}}</p>
+        <br>
+    {% endfor %}
+</body>
+</html>

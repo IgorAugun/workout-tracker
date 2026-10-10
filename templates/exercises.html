@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Workout Tracker</title>
+</head>
+<body>
+    <a href='/'>Home</a>
+    <a href='/workout'>Workout</a>
+    <a href='/log'>Workout Entry</a>
+    {% for exercise in exercises %}
+        <h3>{{exercise[1]}}</h3>
+    {% endfor %}
+</body>
+</html>
