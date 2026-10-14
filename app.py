@@ -39,7 +39,7 @@ def exercise_entry():
         # sql = 'INSERT INTO test (test_name) VALUES (%s)'
         # val = (test_list)
         # cursor.execute(sql, val)
-        cursor.execute('INSERT INTO test (test_name) VALUES (%s)', (test_list)) # oba działają ^^^
+        cursor.execute('INSERT INTO test (test_name) VALUES (%s)', (test_list)) # both work ^^^
         pompa.commit()
         print('Success!')
     return render_template('log.html')
